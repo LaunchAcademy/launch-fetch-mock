@@ -1,0 +1,30 @@
+{
+  "name": "launch-fetch-mock",
+  "version": "0.0.1",
+  "description": "launch pattern for mocking fetch",
+  "main": "index.js",
+  "author": "Dan Pickett",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.1.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/?(*)+(spec|test).js?(x)"
+    ],
+    "setupFiles": [
+      "<rootDir>/test/testHelper.js"
+    ],
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/test/"
+    ]
+  }
+}
