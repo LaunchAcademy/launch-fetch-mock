@@ -12,7 +12,6 @@
     "test:dev": "./node_modules/.bin/jest --watch"
   },
   "dependencies": {
-    "codecov": "^3.0.2",
     "jest": "^23.1.0",
     "whatwg-fetch": "^2.0.4"
   },
