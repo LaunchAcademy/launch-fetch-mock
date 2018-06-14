@@ -14,11 +14,19 @@ describe('mocking fetch', () => {
     })
     
   })
-
   it('returns a promise that throws when a fixture is not found', (done) => {
     fetch('/does/not/exist').catch((error) => {
       expect(error).toEqual(expect.stringMatching("STUBBED URL NOT FOUND"))
       done()
+    })
+  })
+
+  it('resolves for a path that exists when fetch receives fully qualifed host', (done) => {
+    fetch('http://example.com/api/v1/widget').then((response) => {
+      response.json().then((json) => {
+        expect(json.key).toBe('text')
+        done()
+      })
     })
   })
 })
