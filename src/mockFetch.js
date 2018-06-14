@@ -1,5 +1,5 @@
-import makeFixtureConfig from 'makeFixtureConfig'
-import responseFromFixture from 'responseFromFixture'
+import makeFixtureConfig from './makeFixtureConfig'
+import responseFromFixture from './responseFromFixture'
 
 const defaultMethod = 'GET'
 const FIXTURE_PATH = `${__dirname}/fixtures`
